@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3F3D56"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/custom_profile_image"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile_image"
+
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/custom_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentTop="true"
+        android:text="Last Seen"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/backk"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/custom_user_last_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_profile_name"
+        android:layout_marginTop="6dp"
+
+        android:text="Last Seen"
+        android:textColor="#ffff"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/backk"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageButton
+
+        android:id="@+id/backk"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/get_started_btn_label"
+        android:paddingStart="@dimen/ic_nav_padding_start"
+        android:paddingEnd="@dimen/ic_nav_padding_start"
+        android:src="@drawable/icon_back_row"/>
+
+
+</RelativeLayout>

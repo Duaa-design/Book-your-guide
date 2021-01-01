@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="1dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+
+
+    app:contentPadding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F6F6F6"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/request_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/request_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:text="@string/display_name"
+                android:textColor="@color/primary_txt"
+                android:textSize="20dp"
+                android:textStyle="normal"
+
+
+                />
+
+            <TextView
+                android:id="@+id/request_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:text="user status"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/date_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-6dp"
+                    android:drawableStart="@drawable/calender"
+                    android:drawablePadding="6dp"
+                    android:padding="5dp"
+                    android:text="date from"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:padding="0dp"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/date_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="2dp"
+                    android:text="date from"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-6dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dp"
+                    android:text="Number of people:"
+                    android:textSize="14sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/number_of_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dp"
+                    android:text="Number of people"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/request_accept_button"
+                    android:layout_width="90dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/request_recycle"
+                    android:text="Accept"
+                    android:textColor="@color/edit_text_bg"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/request_cancel_button"
+                    android:layout_width="90dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/request_recycle2"
+                    android:text="Decline"
+                    android:textColor="@color/edit_text_bg"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

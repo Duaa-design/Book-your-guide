@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.md.splashloginsignup" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".payment" >
+        </activity>
+        <activity android:name=".create_trip" >
+        </activity>
+        <activity android:name=".tourguide_request" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".navigation" />
+        <activity android:name=".navigation_tourGuide" />
+        <activity
+            android:name=".touristProfile"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Search"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Uploadfilespage" />
+        <activity
+            android:name=".TourGuide_Profile"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".activity_signup_tourguide" />
+        <activity android:name=".Logintourguide" />
+        <activity android:name=".Forgetpassword" />
+        <activity android:name=".Accoountpage_signup" />
+        <activity android:name=".Accountpage_login" />
+        <activity android:name=".SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

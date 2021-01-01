@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touristProfile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/profile_shape"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/user"
+
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tourist_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-107dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:includeFontPadding="false"
+                android:text="manal saud"
+                android:textSize="18sp"  />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tourist_full_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="@string/about_me"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+            >
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fall_name_tour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name_hint"
+                android:background="@drawable/textbox"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:drawableStart="@drawable/username_small_icon"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/Language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/translation"
+                android:drawablePadding="10dp"
+                android:hint="@string/languages"
+                android:background="@drawable/textbox"
+                android:layout_marginTop="30dp"
+                android:importantForAutofill="no"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:textIsSelectable="false" />
+
+
+            <Button
+                android:id="@+id/requestt"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_profile"
+                android:fontFamily="@font/calibri"
+                android:outlineAmbientShadowColor="#FFFFFF"
+                android:text="@string/send_request"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+
+
+            <Button
+                android:id="@+id/paymentNow"
+
+
+                android:layout_centerHorizontal="true"
+
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:background="@drawable/btn_profile"
+                android:fontFamily="@font/calibri"
+
+                android:layout_marginBottom="5dp"
+                android:layout_margin="30dp"
+                style="@style/SolidButtonStyle"
+                android:layout_below="@+id/requestt"
+                android:outlineAmbientShadowColor="#FFFFFF"
+                android:textColor="#ffffff"
+                android:text="Pay Now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+
+               />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

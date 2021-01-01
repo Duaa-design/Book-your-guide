@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splashBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="38dp"
+            android:src="@drawable/ic_undraw_traveling_t8y2"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/container_layout_margin"
+            android:layout_marginTop="@dimen/container_layout_margin"
+            android:layout_marginEnd="@dimen/container_layout_margin"
+            android:layout_marginBottom="@dimen/container_layout_margin">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="#FF8B3D"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Sign Up"
+
+
+                />
+
+            <TextView
+                android:id="@+id/no_account"
+                style="@style/LabelStyle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+              android:fontFamily="serif"
+                 android:textStyle="italic"
+
+                android:textColor="#3F3D56"
+                android:textSize="20sp"
+               android:text="Start new Adventure"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginBottom="-20dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minWidth="175dp"
+                    android:minHeight="50dp"
+
+                    android:background="@drawable/btn_primary"
+
+                    android:text="@string/signupastourist"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:minWidth="175dp"
+                    android:minHeight="50dp"
+                    style="@style/StrokeButtonStyle"
+
+
+                    android:text="@string/signupastourguide"
+                    android:textSize="14sp"
+                    android:textColor="#FF8B3D"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

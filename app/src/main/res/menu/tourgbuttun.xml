@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#f8b389"  >
+
+
+    <item
+
+        android:id="@+id/requestt"
+        android:icon="@drawable/icon_home"
+        android:title="@string/Request"
+        app:cnb_backgroundColor="#787788"
+        app:cnb_iconColor="#3F3D56"
+        app:cnb_textColor="#3F3D56"
+        />
+    <item
+
+        android:id="@+id/profilee"
+        android:icon="@drawable/icon_requestt1"
+        android:title="@string/profile"
+        app:cnb_backgroundColor="#787788"
+        app:cnb_iconColor="#3F3D56"
+        app:cnb_textColor="#3F3D56"
+        />
+    <item
+
+        android:id="@+id/chatt"
+        android:icon="@drawable/icon_chat"
+        android:title="@string/chat"
+        app:cnb_backgroundColor="#787788"
+        app:cnb_iconColor="#3F3D56"
+        app:cnb_textColor="#3F3D56"
+        />
+
+
+
+
+</menu>

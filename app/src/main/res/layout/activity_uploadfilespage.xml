@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/containerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/container_layout_margin"
+                android:layout_marginTop="@dimen/container_layout_margin"
+                android:layout_marginEnd="@dimen/container_layout_margin"
+                android:layout_marginBottom="@dimen/container_layout_margin">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/LabelStyle"
+                    android:layout_marginTop="20dp"
+
+                    android:text="@string/title"
+                android:fontFamily="sans-serif"
+                    android:textColor="#FF8B3D"
+
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/upload_id"
+                    style="@style/LabelStyle"
+                    android:layout_width="230dp"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="40dp"
+                    android:background="#E8E6E6"
+                    android:backgroundTint="#E8E6E6"
+                    android:drawableStart="@android:drawable/ic_menu_upload"
+                    android:text="@string/upload_id"
+                    android:textColor="#6E6B6B"
+                    android:fontFamily="serif"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upload_id"
+                    android:text="@string/textview1" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/LabelStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#D6D3D3"
+                    android:backgroundTint="#D6D3D3"
+                    android:text="@string/btn_upload_id"
+                    android:textColor="#6E6B6B"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/upload_cv"
+                    style="@style/LabelStyle"
+                    android:layout_width="230dp"
+                    android:layout_below="@id/upload_id"
+                    android:layout_marginTop="60dp"
+                    android:background="#E8E6E6"
+                    android:drawableStart="@android:drawable/ic_menu_upload"
+                    android:text="@string/upload_cv"
+                    android:textColor="#6E6B6B"
+                    android:fontFamily="serif"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upload_cv"
+                    android:text="@string/textview2" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upload_id"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#D6D3D3"
+                    android:text="@string/btn_upload_criminal"
+                    android:textColor="#6E6B6B"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/upload_criminal"
+                    style="@style/LabelStyle"
+                    android:layout_width="230dp"
+                    android:layout_below="@id/upload_cv"
+                    android:layout_marginTop="60dp"
+                    android:background="#E8E6E6"
+                    android:backgroundTint="#E8E6E6"
+                    android:drawableStart="@android:drawable/ic_menu_upload"
+                    android:text="@string/upload_criminal"
+                    android:textColor="#6E6B6B"
+                    android:fontFamily="serif"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upload_criminal"
+                    android:text="@string/textview2" />
+
+                <TextView
+                    android:id="@+id/cityy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView4"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/city_message"
+                    style="@style/LabelStyle"
+                    android:fontFamily="serif"
+                    android:textStyle="normal"
+
+                    android:textColor="#3F3D56"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editText_city"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cityy"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints=""
+
+                    android:drawableStart="@android:drawable/ic_menu_myplaces"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:hint="@string/city"
+                    android:background="@drawable/textbox"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    tools:ignore="LabelFor" />
+
+
+
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upload_cv"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#D6D3D3"
+                    android:backgroundTint="#D6D3D3"
+                    android:text="@string/btn_upload_criminal"
+                    android:textColor="#6E6B6B"
+
+                    android:fontFamily="serif"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="256dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginStart="37dp"
+
+
+                    android:background="@drawable/btn_primary"
+
+
+                    android:layout_below="@id/upload_criminal"
+                    android:layout_marginTop="180dp"
+                    android:text="@string/signup_btn_label"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/imagebuttonn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/get_started_btn_label"
+                android:paddingStart="@dimen/ic_nav_padding_start"
+                android:paddingEnd="@dimen/ic_nav_padding_start"
+                android:src="@drawable/icon_back_row" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

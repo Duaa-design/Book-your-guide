@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splashBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/splash_welcome_txt"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_s1_trip"
+            tools:ignore="MissingConstraints"
+            android:background="#ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/container_layout_margin"
+            android:layout_marginTop="@dimen/container_layout_margin"
+            android:layout_marginEnd="@dimen/container_layout_margin"
+            android:layout_marginBottom="@dimen/container_layout_margin">
+
+            <TextView
+
+                android:id="@+id/no_account"
+                style="@style/LabelStyle"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+
+                android:text="@string/STARTPAGE_TITLE"
+                android:textColor="#FF8B3D"
+              android:layout_marginTop="320dp"
+
+                tools:text='"BOOK YOUR GUIDE"' />
+
+            <TextView
+                android:id="@+id/texttt"
+                style="@style/LabelStyle"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:textColor="#3F3D56"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/no_account"
+                android:text="@string/STARTPAGE_DESCRIBTION"
+                tools:text="Community of tour guides around Saudi Arabia" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_marginBottom="-20dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_get_started"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:minWidth="175dp"
+                    android:minHeight="50dp"
+
+                    android:background="@drawable/btn_primary"
+
+
+
+                    android:onClick="getStarted"
+                    android:text="@string/signup_btn_label"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:minWidth="175dp"
+                    android:minHeight="50dp"
+                    style="@style/StrokeButtonStyle"
+
+                    android:onClick="login"
+                    android:text="@string/login_btn_label"
+                    android:textSize="14sp"
+                  android:textColor="#FF8B3D"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

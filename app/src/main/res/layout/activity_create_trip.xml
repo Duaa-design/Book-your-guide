@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touristProfile"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/calender_page"
+            android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/buttonnn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/get_started_btn_label"
+            android:paddingStart="@dimen/ic_nav_padding_start"
+            android:paddingEnd="@dimen/ic_nav_padding_start"
+            android:src="@drawable/icon_back_row"
+            />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE TRIP"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Select a date from"
+                android:textStyle="bold"
+                android:textColor="#FF8B3D"
+               android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/chose_date"
+                android:layout_marginTop="0dp"
+          android:layout_marginBottom="20dp"
+                android:id="@+id/relLayout2">
+
+            <TextView
+                android:id="@+id/selectdateForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/selectDate"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+
+
+                android:importantForAutofill="no" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Select a date to"
+                android:textStyle="bold"
+                android:textColor="#FF8B3D"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/chose_date"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/relLayout1">
+                <TextView
+                    android:id="@+id/selectdateto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/selectDate"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:textStyle="bold"
+                    android:importantForAutofill="no" />
+            </RelativeLayout>
+
+            <TextView
+android:id="@+id/textt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Number of people"
+                android:textStyle="bold"
+                android:textColor="#FF8B3D"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/chose_date"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/relLayout3">
+
+
+                <Spinner
+                    android:id="@+id/selectnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:hint="@string/numberOfpeople"
+                    android:layout_below="@+id/textt"
+                    android:layout_marginBottom="8dp"
+                    android:drawablePadding="10dp"
+
+                    tools:ignore="NotSibling" />
+                <TextView
+                    android:id="@+id/ItemSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="@color/primary_txt"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:paddingBottom="20dp"
+                 />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send_message_request_button"
+                style="@style/SolidButtonStyle"
+
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:minWidth="175dp"
+                android:minHeight="50dp"
+                android:background="@drawable/btn_primary"
+                android:layout_marginTop="50dp"
+
+                android:fontFamily="@font/calibri"
+                android:textStyle="bold"
+                android:outlineAmbientShadowColor="#FFFFFF"
+                android:text="Create"
+                android:textColor="#ffffff"
+
+
+                />
+
+            <Button
+                android:id="@+id/decline_message_request_button"
+                android:layout_below="@id/send_message_request_button"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+
+
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ffffff"
+
+               android:layout_marginBottom="10dp"
+                android:minWidth="175dp"
+                android:minHeight="50dp"
+                android:background="@drawable/btn_primary"
+                android:layout_marginTop="50dp"
+
+                android:fontFamily="@font/calibri"
+                android:textStyle="bold"
+                android:outlineAmbientShadowColor="#FFFFFF"
+
+
+                android:visibility="invisible"
+                android:text="@string/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            android:visibility="invisible"
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

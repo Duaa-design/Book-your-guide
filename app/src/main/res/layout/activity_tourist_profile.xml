@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".touristProfile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/profile_shape"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/user"
+
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/change_profile_btn"
+
+                android:layout_marginTop="5dp"
+                android:layout_alignEnd="@+id/profile_image"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:maxImageSize="20dp"
+                app:backgroundTint="#FFFFFF"
+                app:fabSize="mini"
+                android:src="@drawable/icon_edit"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/tourist_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginBottom="30dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:fontFamily="@font/sf_pro_display_semibold"
+                android:includeFontPadding="false"
+                android:text="manal saud"
+                android:textSize="18sp" />
+
+
+
+            <ImageButton
+                android:id="@+id/signoutTourist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/icon_poweroff" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+            >
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/fall_name_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/full_name_hint"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/username_small_icon"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+            <EditText
+                android:id="@+id/email_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/send_email"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/email_address_hint"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/phone_tourist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/phone_number"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                android:importantForAutofill="no" />
+
+
+            <Button
+                android:id="@+id/updatebutton"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_margin="10dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/btn_profile"
+                android:fontFamily="@font/calibri"
+                android:outlineAmbientShadowColor="#FFFFFF"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

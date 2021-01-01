@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- we define background color -->
+    <solid android:color="#FFF49D1C" />
+
+    <!-- we define border color and thick -->
+
+    <!-- add some padding for text inside -->
+    <padding
+        android:bottom="40dp"
+        android:left="70dp"
+        android:right="70dp"
+        android:top="40dp" />
+
+    <!-- we define corner radius, note that radius can be different for each corner -->
+    <corners android:bottomRightRadius="40dp"
+        android:bottomLeftRadius="40dp"/>
+
+</shape>

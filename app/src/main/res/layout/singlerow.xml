@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="1dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+
+
+    app:contentPadding="20dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_images"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-0dp"
+
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/person_name"
+            android:textStyle="normal"
+            android:fontFamily="@font/calibri"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/profile_images"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/Sign_up_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/profile_images"
+
+            android:fontFamily="@font/calibri"
+            android:text="@string/person_signUpAs"
+            android:textColor="#000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Sign_up_as"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/profile_images"
+
+            android:fontFamily="@font/calibri"
+            android:text="@string/city"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/person_Languages"
+            android:textSize="12sp"
+            android:fontFamily="@font/calibri"
+            android:textColor="#000"
+android:layout_margin="5dp"
+
+            android:layout_below="@+id/profile_images"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri"
+
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF8B3D"
+            />
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
